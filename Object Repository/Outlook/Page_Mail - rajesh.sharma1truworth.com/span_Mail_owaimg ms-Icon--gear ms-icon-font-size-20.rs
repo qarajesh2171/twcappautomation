@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Mail_owaimg ms-Icon--gear ms-icon-font-size-20</name>
+   <tag></tag>
+   <elementGuidId>1fd40e7d-b0d0-4ed9-961c-3aac6a933550</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='O365_MainLink_Settings']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.owaimg.ms-Icon--gear.ms-icon-font-size-20</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>d3139a90-7a1b-4b70-bd2c-e52d039f3913</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>owaimg ms-Icon--gear ms-icon-font-size-20</value>
+      <webElementGuid>98f0ad54-2c1e-41a6-a29f-6becfed51fdd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;O365_MainLink_Settings&quot;)/span[@class=&quot;owaimg ms-Icon--gear ms-icon-font-size-20&quot;]</value>
+      <webElementGuid>69927589-712e-439c-a3a1-1c8ae8ecee2c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//button[@id='O365_MainLink_Settings']/span</value>
+      <webElementGuid>d07786d8-43b1-49ce-8954-9a9ad10d440a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mail'])[2]/following::span[10]</value>
+      <webElementGuid>944bbf31-9274-41f7-861c-2f55a430fde9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mail'])[1]/following::span[12]</value>
+      <webElementGuid>f0911f81-c29f-4143-8249-e093340334bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Search Mail and People'])[1]/preceding::span[9]</value>
+      <webElementGuid>91d6f7d6-3bdc-4be4-b960-9f75a9004a8e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Favourites'])[1]/preceding::span[12]</value>
+      <webElementGuid>10fe2f53-4565-4759-b627-b5c7a5a2b68b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[8]/button/span</value>
+      <webElementGuid>67d473f6-5b7e-44ff-a261-0a44c2090919</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

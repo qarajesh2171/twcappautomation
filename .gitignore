@@ -1,0 +1,10 @@
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/
+/Reports/
+/localFiles.groovy
+/.project
+/appium.log
+/settings/

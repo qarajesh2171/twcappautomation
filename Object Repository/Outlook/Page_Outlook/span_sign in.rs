@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_sign in</name>
+   <tag></tag>
+   <elementGuidId>a98c020e-a665-495b-970e-61a2e921dd25</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='lgnDiv']/div[9]/div/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.signinTxt</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>75183bb1-d660-4d0c-9e1d-b3b3322fa3ba</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>signinTxt</value>
+      <webElementGuid>c7b0c2ef-08c1-45c4-b9db-9e2c0d9a31b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>sign in</value>
+      <webElementGuid>72057691-5329-46e2-8658-51d7249d2249</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;lgnDiv&quot;)/div[@class=&quot;signInEnter&quot;]/div[@class=&quot;signinbutton&quot;]/span[@class=&quot;signinTxt&quot;]</value>
+      <webElementGuid>ca087df5-cb05-461f-ae07-eaa4cf9a7b4a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='lgnDiv']/div[9]/div/span</value>
+      <webElementGuid>c1925012-5177-4816-89d0-e11254b3b756</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Show password'])[1]/following::span[1]</value>
+      <webElementGuid>f188305b-a78e-40a1-ada3-eff617f58701</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Outlook'])[2]/preceding::span[1]</value>
+      <webElementGuid>ee6f2e7a-bdc2-430f-a8d2-9ee7f8a9d039</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='retry'])[1]/preceding::span[1]</value>
+      <webElementGuid>7d92fbf1-8cfa-407d-918d-ef11d5ea2476</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='sign in']/parent::*</value>
+      <webElementGuid>52c2b403-418d-45be-810a-739f175ab986</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[9]/div/span</value>
+      <webElementGuid>67f7aae4-9289-4fc8-96e6-750f435925c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'sign in' or . = 'sign in')]</value>
+      <webElementGuid>d0118613-a703-4da7-9661-1ff4b3b9455b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

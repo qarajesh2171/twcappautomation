@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify existing user login using valid credentials is successful.</description>
+   <name>Existing user login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>886fe967-66c7-4ad7-ae0f-e3a754f4cc8f</testCaseGuid>
+</TestCaseEntity>
