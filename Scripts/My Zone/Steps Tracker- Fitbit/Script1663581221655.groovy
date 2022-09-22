@@ -125,7 +125,7 @@ if (Mobile.verifyElementExist(findTestObject('Steps tracker/android.widget.EditT
 } else {
     Mobile.delay(20, FailureHandling.STOP_ON_FAILURE)
 
-    Mobile.getText(findTestObject('Object Repository/Steps tracker/android.widget.TextView - Fitbit'), 30)
+    not_run: Mobile.getText(findTestObject('Object Repository/Steps tracker/android.widget.TextView - Fitbit'), 30)
 
     Mobile.getText(findTestObject('Steps tracker/android.widget.TextView - 0 Step'), 30)
 
