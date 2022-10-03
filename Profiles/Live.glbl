@@ -64,4 +64,14 @@
       <initValue>'test@123'</initValue>
       <name>password2</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'rajesh.sharma1@truworth.com'</initValue>
+      <name>Useremail2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'test@123'</initValue>
+      <name>password3</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

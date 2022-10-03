@@ -32,7 +32,7 @@ WebUI.comment('Verify that Hamburger menu is present and Capture the username fr
 username = Mobile.verifyElementExist(findTestObject('Hamburger menu'), 30, FailureHandling.OPTIONAL)
 
 if (username == false) {
-    WebUI.callTestCase(findTestCase('TestModules/call dashboard screen'), [:], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('TestModules/call dashboard screen 2'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
@@ -79,21 +79,22 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 text1 = Mobile.getText(findTestObject('Object Repository/GWP/android.widget.TextView - Guided Wellness Programs (1)'), 30)
 
-if(text1 == 'Guided Wellness Programs') {
-	Mobile.comment('Test Case Passed')
-	Mobile.pressBack()
-	
-	Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-	
-	Mobile.getText(findTestObject('Object Repository/GWP/android.widget.TextView - Select an option to explore The Wellness Corner'),
-		30)
-	
-	Mobile.closeApplication()
-}else {
-	Mobile.comment('Test Case Failed')
-	Mobile.closeApplication()
-	
-	assert false : 'Test Case Failed'
-}
+if (text1 == 'Guided Wellness Programs') {
+    Mobile.comment('Test Case Passed')
 
+    Mobile.pressBack()
+
+    Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+    Mobile.getText(findTestObject('Object Repository/GWP/android.widget.TextView - Select an option to explore The Wellness Corner'), 
+        30)
+
+    Mobile.closeApplication()
+} else {
+    Mobile.comment('Test Case Failed')
+
+    Mobile.closeApplication()
+
+    assert false : 'Test Case Failed'
+}
 
