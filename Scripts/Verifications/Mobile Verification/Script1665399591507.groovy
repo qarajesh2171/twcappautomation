@@ -35,45 +35,51 @@ if (username == false) {
     WebUI.callTestCase(findTestCase('TestModules/call dashboard screen'), [:], FailureHandling.STOP_ON_FAILURE)
 }
 
-Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
+WebUI.comment('Tap on Hamburger menu')
 
-Mobile.tap(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Wellness Plans'), 30)
+Mobile.tap(findTestObject('Hamburger menu'), 30)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(10)
 
-Mobile.tapAtPosition(538, 988)
+Mobile.scrollToText('Log Out')
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+WebUI.comment('User tap on Setting from side menu')
 
-Mobile.getText(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Plan Details'), 30)
+Mobile.tap(findTestObject('Object Repository/Settings/android.widget.TextView - Settings'), 30)
 
-Mobile.tap(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - BOOK NOW'), 30)
+WebUI.comment('Verify text : Change Mobile Number')
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Settings/android.widget.TextView - Change Mobile Number'), 30)
 
-Mobile.getText(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Select Coach'), 30)
+WebUI.comment('User tap on Change Mobile Number option')
 
-Mobile.tap(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - BOOK APPOINTMENT'), 30)
+Mobile.tap(findTestObject('Settings/android.widget.TextView - Change Mobile Number'), 30)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+WebUI.comment('Enter the Mobile number')
 
-Mobile.getText(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Book a Session'), 30)
+Mobile.setText(findTestObject('Object Repository/Settings/android.widget.EditText'), '8888888888', 30)
 
-Mobile.tap(findTestObject('Wellness Plans/android.widget.TextView - 0500 PM'), 30, FailureHandling.OPTIONAL)
+WebUI.comment('Verify the text : Enter your mobile number')
 
-Mobile.tapAtPosition(180, 775)
+Mobile.verifyElementExist(findTestObject('Object Repository/Settings/android.widget.TextView - Enter your mobile number'),
+	30)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+WebUI.comment('User tap on Continue button')
 
-Mobile.getText(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Checkout'), 30)
+Mobile.tap(findTestObject('Settings/Continue on mobile number'), 30)
 
-Mobile.getText(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Shuvashish Mukherjee'), 30)
+WebUI.comment('Verify "OTP sent to xxxxxx8888" text is present on the screen')
 
-Mobile.getText(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Amount Payable'), 30)
+Mobile.verifyElementExist(findTestObject('Object Repository/Settings/android.widget.TextView - OTP sent to xxxxxx8888'),
+	30)
 
-Mobile.tap(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - PROCEED TO PAYMENT'), 30)
+screen1 = Mobile.getText(findTestObject('Object Repository/Settings/android.widget.TextView - OTP sent to xxxxxx8888'),
+	30)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+WebUI.comment('User tap on Back button')
 
-Mobile.closeApplication()
+Mobile.pressBack()
 
+WebUI.comment('User tap on Back button')
+
+Mobile.pressBack()

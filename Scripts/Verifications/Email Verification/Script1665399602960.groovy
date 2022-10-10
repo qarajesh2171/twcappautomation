@@ -37,43 +37,47 @@ if (username == false) {
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Wellness Plans'), 30)
+WebUI.comment('Tap on Hamburger menu.')
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Hamburger menu'), 30)
 
-Mobile.tapAtPosition(538, 988)
+WebUI.delay(10)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+WebUI.comment('Get email address text.')
 
-Mobile.getText(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Plan Details'), 30)
+def actualemail = Mobile.getText(findTestObject('Registration/Email address sidemenu'), 30)
 
-Mobile.tap(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - BOOK NOW'), 30)
+WebUI.delay(5)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.pressBack()
 
-Mobile.getText(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Select Coach'), 30)
+WebUI.delay(5)
 
-Mobile.tap(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - BOOK APPOINTMENT'), 30)
+Mobile.tap(findTestObject('Object Repository/Wallet/android.view.ViewGroup'), 30)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.getText(findTestObject('Object Repository/Wallet/android.widget.TextView - My Wallet'), 30)
 
-Mobile.getText(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Book a Session'), 30)
+Mobile.getText(findTestObject('Object Repository/Wallet/android.widget.TextView - Where to spend'), 30)
 
-Mobile.tap(findTestObject('Wellness Plans/android.widget.TextView - 0500 PM'), 30, FailureHandling.OPTIONAL)
+Mobile.getText(findTestObject('Object Repository/Wallet/android.widget.TextView - available in your wallet'), 30)
 
-Mobile.tapAtPosition(180, 775)
+Mobile.startApplication('C:\\Users\\rajeshs1\\Documents\\Live build APKs\\live-build3.apk', true)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/email verify/android.widget.TextView - Secure your account by verifying your email address'), 
+    0)
 
-Mobile.getText(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Checkout'), 30)
+Mobile.getText(findTestObject('Object Repository/email verify/android.widget.TextView - Verify Email Address'), 0)
 
-Mobile.getText(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Shuvashish Mukherjee'), 30)
+Mobile.setText(findTestObject('Object Repository/email verify/android.widget.EditText'), '123456', 0)
 
-Mobile.getText(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - Amount Payable'), 30)
+Mobile.getText(findTestObject('Object Repository/email verify/android.widget.TextView - Invalid OTP'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Wellness Plans/android.widget.TextView - PROCEED TO PAYMENT'), 30)
+Mobile.tap(findTestObject('Object Repository/email verify/android.widget.Button - OK'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.pressBack()
+
+Mobile.getText(findTestObject('Object Repository/email verify/android.widget.TextView - Select an option to explore The Wellness Corner'), 
+    0)
 
 Mobile.closeApplication()
 
