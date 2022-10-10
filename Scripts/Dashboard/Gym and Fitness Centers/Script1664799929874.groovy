@@ -37,23 +37,39 @@ if (username == false) {
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
+Mobile.scrollToText('Gyms & Fitness Centers', FailureHandling.STOP_ON_FAILURE)
+
 Mobile.getText(findTestObject('Object Repository/Fitternity/android.widget.TextView - Gyms  Fitness Centers'), 30)
 
 Mobile.tap(findTestObject('Fitternity/android.widget.TextView - Gyms  Fitness Centers'), 30)
 
-Mobile.getText(findTestObject('Object Repository/Fitternity/android.widget.TextView - Choose an activity'), 30)
+WebUI.delay(5)
+
+Mobile.getText(findTestObject('Object Repository/Fitternity/android.widget.TextView - Choose an activity'), 30, FailureHandling.OPTIONAL)
 
 Mobile.getText(findTestObject('Object Repository/Fitternity/android.widget.TextView - Book a Workout'), 30)
 
 Mobile.tap(findTestObject('Fitternity/android.widget.TextView - Explore all'), 30)
 
+WebUI.delay(3)
+
+Mobile.tapAtPosition(562, 772)
+
+WebUI.delay(3)
+
 Mobile.getText(findTestObject('Object Repository/Fitternity/android.widget.TextView - Facilities'), 30)
 
 Mobile.tap(findTestObject('Object Repository/Fitternity/android.widget.TextView - BOOK A SESSION'), 30)
 
-Mobile.getText(findTestObject('Object Repository/Fitternity/android.widget.TextView - 30700 pm - 30800 pm'), 30)
+WebUI.delay(3)
+
+Mobile.tapAtPosition(303, 1551)
+
+not_run: Mobile.getText(findTestObject('Object Repository/Fitternity/android.widget.TextView - 30700 pm - 30800 pm'), 30)
 
 Mobile.tap(findTestObject('Object Repository/Fitternity/android.view.ViewGroup'), 30)
+
+WebUI.delay(3)
 
 Mobile.getText(findTestObject('Object Repository/Fitternity/android.widget.TextView - Booking For'), 30)
 
@@ -61,9 +77,13 @@ Mobile.getText(findTestObject('Object Repository/Fitternity/android.widget.TextV
 
 Mobile.tap(findTestObject('Object Repository/Fitternity/android.widget.TextView - BOOK SESSION'), 30)
 
+WebUI.delay(3)
+
 Mobile.getText(findTestObject('Object Repository/Fitternity/android.widget.TextView - Checkout'), 30)
 
 Mobile.tap(findTestObject('Object Repository/Fitternity/android.widget.TextView - CHECKOUT (1)'), 30)
+
+WebUI.delay(10)
 
 Mobile.closeApplication()
 
