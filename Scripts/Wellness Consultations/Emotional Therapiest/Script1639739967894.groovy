@@ -44,8 +44,6 @@ if (username == false) {
     not_run: WebUI.delay(20)
 }
 
-WebUI.callTestCase(findTestCase('TestModules/call dashboard screen'), [:], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.comment('Tap on Therapy tab on dashboard')
 
 Mobile.tap(findTestObject('Emotional Therapiest/Tharepy tab dashboard'), 30)
@@ -56,7 +54,7 @@ WebUI.comment('Tap on START NOW of Therapy over chat on Emotional therapy screen
 
 Mobile.tap(findTestObject('Object Repository/Emotional Therapiest/android.widget.TextView - START NOW'), 30)
 
-WebUI.delay(3)
+WebUI.delay(10)
 
 WebUI.comment('Enter the query in the text box: "Test query via automation testing"')
 
@@ -77,7 +75,7 @@ Mobile.setText(findTestObject('Object Repository/Emotional Therapiest/android.wi
 
 WebUI.comment('Tap on START NOW button on emotional therapy screen')
 
-Mobile.tap(findTestObject('Emotional Therapiest/android.view.ViewGroup (2)'), 30)
+Mobile.tap(findTestObject('Emotional Therapiest/START NOW on emo therapy'), 30)
 
 WebUI.delay(10)
 
@@ -94,7 +92,7 @@ WebUI.delay(3)
 
 WebUI.comment('Tap on "VIEW PROFILE" button on finding a therapist screen')
 
-Mobile.tap(findTestObject('Object Repository/Ask a Dietitians/android.view.ViewGroup (3)'), 30)
+Mobile.tap(findTestObject('Emotional Therapiest/View Profile on emo therapy'), 30)
 
 WebUI.delay(3)
 
@@ -133,7 +131,7 @@ WebUI.delay(3)
 
 WebUI.comment('User tap on "START CHAT" button on finding a therapist screen where assigned coach is displaying')
 
-Mobile.tap(findTestObject('Object Repository/Ask a Dietitians/android.view.ViewGroup (5)'), 30)
+Mobile.tap(findTestObject('Emotional Therapiest/START CHAT on find therapy'), 30)
 
 WebUI.delay(3)
 

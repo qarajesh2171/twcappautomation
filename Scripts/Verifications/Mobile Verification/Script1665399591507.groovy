@@ -61,8 +61,8 @@ Mobile.setText(findTestObject('Object Repository/Settings/android.widget.EditTex
 
 WebUI.comment('Verify the text : Enter your mobile number')
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Settings/android.widget.TextView - Enter your mobile number'),
-	30)
+Mobile.verifyElementExist(findTestObject('Object Repository/Settings/android.widget.TextView - Enter your mobile number'), 
+    30)
 
 WebUI.comment('User tap on Continue button')
 
@@ -70,16 +70,21 @@ Mobile.tap(findTestObject('Settings/Continue on mobile number'), 30)
 
 WebUI.comment('Verify "OTP sent to xxxxxx8888" text is present on the screen')
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Settings/android.widget.TextView - OTP sent to xxxxxx8888'),
-	30)
+Mobile.verifyElementExist(findTestObject('Object Repository/Settings/android.widget.TextView - OTP sent to xxxxxx8888'), 
+    30)
 
-screen1 = Mobile.getText(findTestObject('Object Repository/Settings/android.widget.TextView - OTP sent to xxxxxx8888'),
-	30)
+screen1 = Mobile.getText(findTestObject('Object Repository/Settings/android.widget.TextView - OTP sent to xxxxxx8888'), 
+    30)
+
+WebUI.comment('User tap on Back button')
+
+Mobile.pressBack()
 
 WebUI.comment('User tap on Back button')
 
 Mobile.pressBack()
 
-WebUI.comment('User tap on Back button')
+WebUI.delay(10)
 
-Mobile.pressBack()
+Mobile.closeApplication()
+

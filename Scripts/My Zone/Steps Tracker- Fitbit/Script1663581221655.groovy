@@ -81,7 +81,7 @@ true) {
     WebUI.delay(5)
 }
 
-text1 = Mobile.getText(findTestObject('Object Repository/Steps tracker/android.widget.TextView - Connected'), 30)
+text1 = Mobile.getText(findTestObject('Object Repository/Steps tracker/android.widget.TextView - Connected'), 30, FailureHandling.OPTIONAL)
 
 Mobile.comment(text1)
 
@@ -127,7 +127,7 @@ if (Mobile.verifyElementExist(findTestObject('Steps tracker/android.widget.EditT
 
     not_run: Mobile.getText(findTestObject('Object Repository/Steps tracker/android.widget.TextView - Fitbit'), 30)
 
-    Mobile.getText(findTestObject('Steps tracker/android.widget.TextView - 0 Step'), 30)
+    not_run: Mobile.getText(findTestObject('Steps tracker/android.widget.TextView - 0 Step'), 30)
 
     Mobile.getText(findTestObject('Object Repository/Steps tracker/android.widget.TextView - Todays Steps'), 30)
 
