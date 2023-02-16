@@ -18,11 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
 KeywordLogger log = new KeywordLogger()
 
-WebUI.delay(40)
+WebUI.delay(20)
 
 if (Mobile.verifyElementExist(findTestObject('App update/android.widget.Button - CANCEL'), 30, FailureHandling.OPTIONAL) == 
 true) {
@@ -49,10 +49,10 @@ if (username == false) {
     not_run: WebUI.delay(20)
 }
 
-if (Mobile.verifyElementExist(findTestObject('Food tracker/My zone tab 5'), 60, FailureHandling.OPTIONAL) == true) {
+if (Mobile.verifyElementExist(findTestObject('Food tracker/My zone tab 5'), 30, FailureHandling.OPTIONAL) == true) {
     WebUI.comment('User tap on "My Zone" tab')
 
-    Mobile.tap(findTestObject('Food tracker/My zone tab 5'), 60)
+    Mobile.tap(findTestObject('Food tracker/My zone tab 5'), 30)
 }
 
 WebUI.delay(15)

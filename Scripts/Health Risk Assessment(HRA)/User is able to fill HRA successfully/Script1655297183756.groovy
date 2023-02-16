@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
 KeywordLogger log = new KeywordLogger()
 
@@ -54,7 +54,7 @@ if (username == false) {
 
 not_run: WebUI.scrollToElement(findTestObject('HRA2/View More text'), 15)
 
-Mobile.scrollToText('Fitness', FailureHandling.STOP_ON_FAILURE)
+Mobile.scrollToText('And More...', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(3)
 

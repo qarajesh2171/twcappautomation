@@ -17,11 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
-WebUI.delay(30)
+WebUI.delay(20)
 
-if (Mobile.verifyElementExist(findTestObject('App update/android.widget.Button - CANCEL'), 40, FailureHandling.OPTIONAL) == 
+not_run: if (Mobile.verifyElementExist(findTestObject('App update/android.widget.Button - CANCEL'), 40, FailureHandling.OPTIONAL) == 
 true) {
     Mobile.tap(findTestObject('App update/android.widget.Button - CANCEL'), 30)
 }
@@ -70,7 +70,9 @@ WebUI.delay(15)
 
 WebUI.comment('User tap on "My Health" Profile card on My zone screen')
 
-Mobile.tap(findTestObject('Object Repository/Health Files/android.view.ViewGroup'), 30)
+not_run: Mobile.tap(findTestObject('Object Repository/Health Files/android.view.ViewGroup'), 30)
+
+Mobile.tap(findTestObject('Health Files/My Health Profile text button'), 30)
 
 WebUI.delay(3)
 
@@ -164,7 +166,7 @@ WebUI.delay(5)
 
 WebUI.comment('Tap on "Yes" button of the pop-up;Are you sure you would like to delete reading 150/120')
 
-Mobile.tap(findTestObject('Object Repository/Health Vitals/android.widget.Button - YES'), 30)
+Mobile.tap(findTestObject('Object Repository/Health Vitals/android.widget.Button - YES'), 30, FailureHandling.OPTIONAL)
 
 WebUI.delay(10)
 

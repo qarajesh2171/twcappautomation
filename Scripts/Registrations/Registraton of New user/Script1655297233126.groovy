@@ -20,14 +20,14 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
 if (Mobile.verifyElementExist(findTestObject('Exercise tracker/LATER button on launch'), 15, FailureHandling.OPTIONAL) == 
 true) {
     Mobile.tap(findTestObject('Exercise tracker/LATER button on launch'), 30)
 }
 
-WebUI.delay(45)
+WebUI.delay(15)
 
 KeywordLogger log = new KeywordLogger()
 
@@ -226,9 +226,13 @@ WebUI.comment('Tap on Hamburger menu')
 
 Mobile.tap(findTestObject('Hamburger menu'), 30)
 
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.comment('Get email address from side menu')
 
-def email = Mobile.getText(findTestObject('Registration/Email address sidemenu'), 20)
+def email = Mobile.getText(findTestObject('Login/email sidemenu text'), 20)
+
+def username = Mobile.getText(findTestObject('Registration/Sidemenu text'), 10)
 
 if (email == (('rrrajesh' + randomemail) + '@truworth.com')) {
     log.logInfo('email address matched successfully')
@@ -239,8 +243,6 @@ if (email == (('rrrajesh' + randomemail) + '@truworth.com')) {
 }
 
 WebUI.comment('Capture the side menu text i.e. username')
-
-def username = Mobile.getText(findTestObject('Registration/Sidemenu text'), 10)
 
 log.logInfo(username)
 
@@ -268,9 +270,9 @@ if (((fname + ' ') + lname) == username) {
     Mobile.closeApplication()
 }
 
-Mobile.scrollToText('Log Out')
-
 WebUI.comment('Tap on Logout button.')
+
+Mobile.scrollToText('Log Out')
 
 Mobile.tap(findTestObject('Login/Log Out 1'), 10)
 

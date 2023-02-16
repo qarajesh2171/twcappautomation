@@ -18,13 +18,13 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
 KeywordLogger log = new KeywordLogger()
 
 WebUI.delay(45)
 
-if (Mobile.verifyElementExist(findTestObject('App update/android.widget.Button - CANCEL'), 15, FailureHandling.OPTIONAL) == 
+not_run: if (Mobile.verifyElementExist(findTestObject('App update/android.widget.Button - CANCEL'), 15, FailureHandling.OPTIONAL) == 
 true) {
     Mobile.tap(findTestObject('App update/android.widget.Button - CANCEL'), 30)
 }
@@ -49,7 +49,7 @@ if (username == false) {
     not_run: WebUI.delay(20)
 }
 
-if (Mobile.verifyElementExist(findTestObject('Food tracker/My zone tab 5'), 60, FailureHandling.OPTIONAL) == true) {
+if (Mobile.verifyElementExist(findTestObject('Food tracker/My zone tab 5'), 20, FailureHandling.OPTIONAL) == true) {
     WebUI.comment('Tap on My zone tab on home screen')
 
     Mobile.tap(findTestObject('Food tracker/My zone tab 5'), 60)
@@ -63,9 +63,9 @@ def expected_file = 'health file via automation 1' + random_num
 
 WebUI.comment('Tap on My health Profile card in my zone section')
 
-not_run: Mobile.tap(findTestObject('Object Repository/Health Files/android.view.ViewGroup'), 30)
+Mobile.tap(findTestObject('Health Files/My Health Profile text button'), 30)
 
-Mobile.tapAtPosition(528, 450)
+not_run: Mobile.tapAtPosition(528, 450)
 
 WebUI.delay(3)
 
@@ -75,7 +75,7 @@ Mobile.getText(findTestObject('Object Repository/Health Files/android.widget.Tex
 
 WebUI.comment('tap on My health file on my health profile screen')
 
-Mobile.tap(findTestObject('Object Repository/Health Files/android.view.ViewGroup (1)'), 30)
+Mobile.tap(findTestObject('Health Files/My Health File text button'), 30)
 
 WebUI.delay(3)
 
@@ -179,6 +179,8 @@ WebUI.delay(3)
 WebUI.comment('Tap and hold on the added health file')
 
 Mobile.tapAndHold(findTestObject('Health Files/android.view.ViewGroup (7)'), 5, 30)
+
+WebUI.delay(3)
 
 WebUI.comment('Tap on "YES" button on the popup Are you sure you would like to delete this health record?')
 

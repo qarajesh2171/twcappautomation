@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
 WebUI.delay(40)
 
@@ -90,12 +90,14 @@ WebUI.comment('Tap on Back button to redirect on Home Screen')
 
 Mobile.pressBack()
 
-if(screen1 == 'Refer & Earn') {
-	WebUI.comment('Test case Passed')
-}else {
-	WebUI.comment('Test case Failed')
-	Mobile.closeApplication()
-	assert false : 'Test case failed- User not at Refer n Earn screen'
+if (screen1 == 'Refer & Earn') {
+    WebUI.comment('Test case Passed')
+} else {
+    WebUI.comment('Test case Failed')
+
+    Mobile.closeApplication()
+
+    assert false : 'Test case failed- User not at Refer n Earn screen'
 }
 
 Mobile.closeApplication()

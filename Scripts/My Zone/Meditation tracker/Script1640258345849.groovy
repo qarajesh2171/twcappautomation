@@ -18,11 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
-WebUI.delay(60)
+WebUI.delay(20)
 
-if (Mobile.verifyElementExist(findTestObject('App update/android.widget.Button - CANCEL'), 40, FailureHandling.OPTIONAL) == 
+not_run: if (Mobile.verifyElementExist(findTestObject('App update/android.widget.Button - CANCEL'), 40, FailureHandling.OPTIONAL) == 
 true) {
     Mobile.tap(findTestObject('App update/android.widget.Button - CANCEL'), 30)
 }
@@ -63,9 +63,9 @@ WebUI.delay(6)
 
 WebUI.comment('User tap on Meditation tracker in my zone')
 
-Mobile.tapAtPosition(562, 1316)
+not_run: Mobile.tapAtPosition(562, 1316)
 
-not_run: Mobile.tap(findTestObject('Meditation tracker/Meditation button'), 30, FailureHandling.OPTIONAL)
+Mobile.tap(findTestObject('Meditation tracker/Meditation button'), 30, FailureHandling.OPTIONAL)
 
 WebUI.delay(3)
 

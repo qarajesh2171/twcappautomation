@@ -35,5 +35,5 @@ Mobile.setText(findTestObject('Enter password'), GlobalVariable.password, 30)
 
 Mobile.tap(findTestObject('Continue button'), 30)
 
-WebUI.delay(30)
+WebUI.delay(10)
 

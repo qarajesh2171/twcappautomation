@@ -1,0 +1,47 @@
+{
+  "keywordFileContentHash": "BB32F0F5139A689D1429D1DFF536843A",
+  "keywordClasses": [
+    {
+      "name": "test",
+      "keywordMethods": [
+        {
+          "name": "waitForElementvisible",
+          "parameters": [
+            {
+              "name": "to",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "PropertyValue",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    },
+    {
+      "name": "test$1",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

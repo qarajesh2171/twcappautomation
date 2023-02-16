@@ -20,9 +20,9 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
-WebUI.delay(40)
+WebUI.delay(20)
 
 KeywordLogger log = new KeywordLogger()
 
@@ -38,10 +38,10 @@ if (username == false) {
 
 Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 
-if (Mobile.verifyElementExist(findTestObject('Food tracker/My zone tab 5'), 60, FailureHandling.OPTIONAL) == true) {
+if (Mobile.verifyElementExist(findTestObject('Food tracker/My zone tab 5'), 30, FailureHandling.OPTIONAL) == true) {
     WebUI.comment('User tap on "My Zone" tab')
 
-    Mobile.tap(findTestObject('Food tracker/My zone tab 5'), 60)
+    Mobile.tap(findTestObject('Food tracker/My zone tab 5'), 20)
 
     Mobile.delay(10, FailureHandling.STOP_ON_FAILURE)
 }

@@ -21,7 +21,7 @@ Mobile.startApplication('C:\\Users\\rajeshs1\\Downloads\\TWC_V77(5.8)_2021-11-22
 
 WebUI.delay(40)
 
-/*String welcometext = WebUI.getText(findTestObject('Registration/Welcome text'))
+/*String welcometext = WebUI.getText(findTestObject('null'))
 
 if (welcometext == (('Hi' + 'Rrajesh') + '!')) {
     println('User registered successfully' + 'User matched')
@@ -31,8 +31,14 @@ Mobile.tap(findTestObject('Hamburger menu'), 0)
 WebUI.delay(4)
 
 def email = Mobile.getText(findTestObject('Registration/Email address sidemenu'), 10)
+
 println(email)
 
 def username = Mobile.getText(findTestObject('Registration/Sidemenu text'), 10)
+
 println(username)
+
+CustomKeywords.'test.waitForElementvisible'(findTestObject('App update/android.widget.Button - CANCEL'), 'pass')
+
+Mobile.waitForElementPresent(findTestObject(null), 0)
 

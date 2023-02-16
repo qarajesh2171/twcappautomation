@@ -6,12 +6,12 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'lokesh.garg@truworth.com'</initValue>
+      <initValue>'rajesh.sharma1@truworth.com'</initValue>
       <name>Useremail</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Lokesh@123'</initValue>
+      <initValue>'test@123'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'C:\\Users\\rajeshs1\\Downloads\\BuildForAutomation\\Automation_build3.apk'</initValue>
+      <initValue>'D:\\twc-release.apk'</initValue>
       <name>diawi_path</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

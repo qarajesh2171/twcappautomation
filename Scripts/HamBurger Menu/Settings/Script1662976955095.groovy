@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
 WebUI.delay(40)
 
@@ -170,7 +170,9 @@ screen3 = Mobile.getText(findTestObject('Object Repository/Settings/android.widg
 
 WebUI.comment('User tap on cross icon')
 
-Mobile.tap(findTestObject('Object Repository/Settings/android.view.ViewGroup'), 30)
+not_run: Mobile.tap(findTestObject('Object Repository/Settings/android.view.ViewGroup'), 30)
+
+Mobile.tapAtPosition(476, 981)
 
 WebUI.comment('User tap on Delete Account option')
 

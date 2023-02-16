@@ -21,7 +21,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 Mobile.startApplication(GlobalVariable.diawi_path, false)
 
-WebUI.delay(40)
+WebUI.delay(20)
 
 if (Mobile.verifyElementExist(findTestObject('App update/android.widget.Button - CANCEL'), 40, FailureHandling.OPTIONAL) == 
 true) {
@@ -85,7 +85,7 @@ WebUI.delay(10)
 
 WebUI.comment('Get email address text.')
 
-def actualemail = Mobile.getText(findTestObject('Registration/Email address sidemenu'), 30)
+def actualemail = Mobile.getText(findTestObject('Login/email sidemenu text'), 30)
 
 WebUI.delay(5)
 
