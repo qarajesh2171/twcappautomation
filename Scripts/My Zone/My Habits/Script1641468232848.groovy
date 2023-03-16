@@ -18,9 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
-WebUI.delay(30)
+WebUI.delay(20)
 
 KeywordLogger log = new KeywordLogger()
 
@@ -60,13 +60,11 @@ not_run: Mobile.getText(findTestObject('Object Repository/My habits/android.widg
 
 WebUI.comment('User tap on Habit tracker from the My zone screen.')
 
-Mobile.tap(findTestObject('My habits/Tap on habit tracker'), 30, FailureHandling.OPTIONAL)
+Mobile.tap(findTestObject('habits/tap on habit tracker tab'), 30, FailureHandling.OPTIONAL)
 
 WebUI.delay(5)
 
 Mobile.tap(findTestObject('trackers/habit tracker'), 30, FailureHandling.OPTIONAL)
-
-WebUI.delay(5)
 
 if (Mobile.verifyElementExist(findTestObject('My habits/continue when no habits'), 15, FailureHandling.OPTIONAL) == true) {
     WebUI.comment('User tap on "Continue" button when no habit is saved.')
@@ -231,4 +229,6 @@ if (Mobile.verifyElementExist(findTestObject('My habits/continue when no habits'
 
     Mobile.closeApplication()
 }
+
+WebUI.delay(5)
 

@@ -17,11 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
-WebUI.delay(45)
+WebUI.delay(20)
 
-if (Mobile.verifyElementExist(findTestObject('App update/android.widget.Button - CANCEL'), 40, FailureHandling.OPTIONAL) == 
+not_run: if (Mobile.verifyElementExist(findTestObject('App update/android.widget.Button - CANCEL'), 40, FailureHandling.OPTIONAL) == 
 true) {
     Mobile.tap(findTestObject('App update/android.widget.Button - CANCEL'), 30)
 }
