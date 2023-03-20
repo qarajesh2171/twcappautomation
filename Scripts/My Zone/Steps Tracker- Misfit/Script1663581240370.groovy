@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
-WebUI.delay(45)
+WebUI.delay(20)
 
 username = Mobile.verifyElementExist(findTestObject('Hamburger menu'), 30, FailureHandling.OPTIONAL)
 
@@ -41,13 +41,13 @@ if (username == false) {
     not_run: WebUI.delay(20)
 }
 
-if (Mobile.verifyElementExist(findTestObject('Food tracker/My zone tab 5'), 60, FailureHandling.OPTIONAL) == true) {
+if (Mobile.verifyElementExist(findTestObject('Food tracker/My zone tab 5'), 30, FailureHandling.OPTIONAL) == true) {
     WebUI.comment('Tap on My zone tab fron home screen')
 
-    Mobile.tap(findTestObject('Food tracker/My zone tab 5'), 60)
+    Mobile.tap(findTestObject('Food tracker/My zone tab 5'), 30)
 }
 
-WebUI.delay(15)
+WebUI.delay(10)
 
 not_run: if (Mobile.verifyElementExist(findTestObject('Food tracker/android.view.ViewGroup22'), 40, FailureHandling.OPTIONAL) == 
 true) {

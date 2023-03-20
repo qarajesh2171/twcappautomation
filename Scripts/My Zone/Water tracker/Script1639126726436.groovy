@@ -18,9 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
-Mobile.startApplication(GlobalVariable.build_path, false)
+Mobile.startApplication(GlobalVariable.diawi_path, false)
 
-WebUI.delay(45)
+WebUI.delay(20)
 
 KeywordLogger log = new KeywordLogger()
 
@@ -45,7 +45,7 @@ if (username == false) {
 }
 
 if (Mobile.verifyElementExist(findTestObject('Food tracker/My zone tab 5'), 30, FailureHandling.OPTIONAL) == true) {
-    Mobile.tap(findTestObject('Food tracker/My zone tab 5'), 30)
+    Mobile.tap(findTestObject('Food tracker/My zone tab 5'), 20)
 }
 
 WebUI.comment('Tap on my zone tab on home screen')
@@ -91,7 +91,7 @@ WebUI.delay(10)
 
 WebUI.comment('Tap on "+" icon to add no. of glass of water from 0 to 1')
 
-Mobile.tap(findTestObject('Water tracker/Add no of glass of water'), 30)
+Mobile.tap(findTestObject('Water tracker/add number of glassess water tracker'), 30)
 
 WebUI.delay(15)
 

@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication(GlobalVariable.diawi_path, false)
 
-WebUI.delay(45)
+WebUI.delay(20)
 
 username = Mobile.verifyElementExist(findTestObject('Hamburger menu'), 30, FailureHandling.OPTIONAL)
 
