@@ -57,15 +57,11 @@ if (Mobile.verifyElementExist(findTestObject('Food tracker/My zone tab 5'), 30, 
 
 WebUI.delay(15)
 
-Mobile.scrollToText('8 hours slept', FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(3)
-
 WebUI.comment('User tap on Exercise tracker in my zone section')
 
 not_run: Mobile.tap(findTestObject('Exercise tracker/Exercise tracker tab on my zone'), 15, FailureHandling.OPTIONAL)
 
-Mobile.tapAtPosition(632, 1104)
+Mobile.tap(findTestObject('trackerss/exercise1'), 30)
 
 WebUI.delay(3)
 
