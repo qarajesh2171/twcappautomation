@@ -54,7 +54,7 @@ WebUI.delay(15)
 
 WebUI.comment('Tap on Water tracker in my zone section')
 
-Mobile.tap(findTestObject('hc/water tracker 01'), 30, FailureHandling.OPTIONAL)
+Mobile.tap(findTestObject('trackerss/watertracker1'), 30, FailureHandling.OPTIONAL)
 
 WebUI.delay(5)
 
@@ -109,7 +109,7 @@ WebUI.delay(5)
 
 WebUI.comment('Tap on Water Tracker from my zone screen')
 
-Mobile.tap(findTestObject('hc/water tracker 01'), 30, FailureHandling.OPTIONAL)
+Mobile.tap(findTestObject('trackerss/watertracker1'), 30, FailureHandling.OPTIONAL)
 
 WebUI.delay(5)
 
@@ -139,7 +139,7 @@ not_run: WebUI.delay(5)
 
 WebUI.comment('Capure the number of glass of water from logs.')
 
-def waterglasses2 = Mobile.getText(findTestObject('Water tracker/Captre 1 glass in logs'), 30)
+def waterglasses2 = Mobile.getText(findTestObject('Water tracker/add number of glassess water tracker'), 30)
 
 log.logInfo(waterglasses2)
 

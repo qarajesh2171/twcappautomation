@@ -61,7 +61,7 @@ not_run: WebUI.delay(10)
 
 not_run: Mobile.tap(findTestObject('trackers/food tracker'), 20, FailureHandling.OPTIONAL)
 
-Mobile.tapAtPosition(536, 1283)
+Mobile.tap(findTestObject('trackerss/steptracker1'), 30)
 
 WebUI.delay(10)
 
